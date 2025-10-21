@@ -117,8 +117,9 @@ export default function TerminalHero() {
                 </a>
               </Button>
               <Button variant="outline" className="gap-1.5 md:gap-2 text-xs md:text-sm px-3 md:px-4">
-                <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
+                <a href="https://drive.google.com/file/d/14iKE6Kk0MrBBds1uPWlCP_JBbdbjCTlO/view?usp=drive_link">
                 Resume
+                </a>
               </Button>
             </div>
           </div>
