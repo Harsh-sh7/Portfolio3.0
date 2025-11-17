@@ -23,9 +23,9 @@ const devStats = [
   { icon: Coffee, label: "Coffees", value: 324, color: "text-amber-500" },
   { icon: Bug, label: "Bugs Fixed", value: 127, color: "text-red-500" },
   { icon: GitCommit, label: "Commits", value: 100, color: "text-green-500" },
-  { icon: Clock, label: "Hours Coded", value: 6000, color: "text-blue-500" },
-  { icon: Zap, label: "Lines of Code", value: 8000, color: "text-purple-500" },
-  { icon: Award, label: "Projects", value: 20, color: "text-pink-500" },
+  { icon: Clock, label: "Hours Coded", value: 7000, color: "text-blue-500" },
+  { icon: Zap, label: "Lines of Code", value: 18000, color: "text-purple-500" },
+  { icon: Award, label: "Projects", value: 21, color: "text-pink-500" },
 ]
 
 export default function AboutPage() {

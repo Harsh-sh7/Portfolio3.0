@@ -8,6 +8,26 @@ import { Github, ExternalLink, Star, GitFork } from "lucide-react"
 const projects = [
   {
     id: 1,
+    title: "NotAI",
+    description: "NotAI is a full-stack platform that combines AI chat with real-time code execution. It lets users talk to Gemini and instantly run JavaScript, Python, Java, or C++ in the same interface.",
+    image: "/assets/projects/NotAI.png",
+    tags: ["TypeScript", "JavaScript", "MongoDB", "Gemini API"],
+    github: "https://github.com/Harsh-sh7/NotAI",
+    demo: "https://not-ai-pro.vercel.app/",
+    stars: 15,
+    forks: 4,
+    codePreview: `// NotAI: AI chat + code execution
+  app.post('/assist', async (req, res) => {
+  const { prompt, code, lang } = req.body;
+  const reply = await gemini.generate({ prompt });
+  const exec = code
+    ? await judge0.run({ source_code: code, language_id: getId(lang) })
+    : null;
+  res.json({ reply: reply.text, output: exec?.stdout });
+});`
+  },
+  {
+    id: 2,
     title: "FriendAI - AI Companion",
     description: "A comprehensive personal AI companion for daily wellness tracking, mood monitoring, and life guidance with voice integration.",
     image: "/assets/projects/friendai.jpg",
@@ -26,7 +46,7 @@ const analyzeMood = async (text) => {
 };`
   },
   {
-    id: 2,
+    id: 3,
     title: "Vehicle Tracker",
     description: "A dynamic React app that tracks and animates vehicles in real time with route mapping and ride date selection using Leaflet.",
     image: "/assets/projects/vehicle-tracker.jpg",
@@ -44,25 +64,6 @@ const animateVehicle = (route) => {
     }, index * 1000);
   });
 };`
-  },
-  {
-    id: 3,
-    title: "VSExtension",
-    description: "A VS Code extension for real-time file change tracking, git commit syncing, and cloud analytics via Supabase integration.",
-    image: "/assets/projects/vsextension.jpg",
-    tags: ["TypeScript", "JavaScript", "Supabase", "VS Code API", "PostgreSQL"],
-    github: "https://github.com/Harsh-sh7/VSExtension",
-    demo: "https://github.com/Harsh-sh7/VSExtension",
-    stars: 15,
-    forks: 4,
-    codePreview: `// File Change Tracking
-vscode.workspace.onDidChangeTextDocument((event) => {
-  const changes = event.contentChanges;
-  supabase.from('file_changes').insert({
-    file: event.document.fileName,
-    changes: changes.length
-  });
-});`
   },
   {
     id: 4,
